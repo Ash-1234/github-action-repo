@@ -1,0 +1,27 @@
+name: DEMO2
+
+# Controls when the workflow will run
+on:
+  push:
+    
+
+# A workflow run is made up of one or more jobs
+jobs:
+  first-job:
+     runs-on: ubuntu-latest
+     
+     steps:
+      - name: firstjob
+        run: echo "hello world"
+  second-job:
+     runs-on: ubuntu-latest
+     needs: first-job
+     steps:
+      - name: secondjob
+        run: echo "second world"
+  third-job:
+     runs-on: ubuntu-latest
+     needs: second-job
+     steps:
+      - name: third job
+        run: echo "third world"
