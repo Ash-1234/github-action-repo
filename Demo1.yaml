@@ -8,5 +8,7 @@ on:
 # A workflow run is made up of one or more jobs
 jobs:
   first-job:
-    - name: firtsjob
-      run: echo"hello world"
+     runs-on: ubuntu-latest
+     steps:
+      - name: firstjob
+        run: echo "hello world"
