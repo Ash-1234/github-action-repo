@@ -1,0 +1,12 @@
+name: Demo1
+
+on:
+  push:
+jobs:
+  First-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout-to-repo
+      uses: actions/checkout@v7
+    - name: listthe file
+      run: ls
