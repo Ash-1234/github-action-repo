@@ -12,5 +12,4 @@ jobs:
      steps:
       - name: firstjob
         run: echo "hello world"
-      - name: firstjob
-        run: echo "hello world"
+      
