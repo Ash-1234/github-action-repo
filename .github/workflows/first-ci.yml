@@ -12,5 +12,7 @@ jobs:
      steps:
       - name: checkout to git
         uses: actions/checkout@v4
+        with:
+          ref: 'main'
       - name: firstjob
         run: echo "hello world"
