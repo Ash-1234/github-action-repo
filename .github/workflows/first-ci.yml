@@ -7,10 +7,10 @@ on:
 
 # A workflow run is made up of one or more jobs
 jobs:
-  first-job:
+  Build:
      runs-on: ubuntu-latest
      steps:
-      - name: firstjob
-        run: echo "hello world"
+      - name: checkout to git
+        uses: actions/checkout@v4
       - name: firstjob
         run: echo "hello world"
