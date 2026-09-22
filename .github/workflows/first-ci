@@ -1,0 +1,14 @@
+name: first-ci
+
+on:
+  push:
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout-to-repo
+      uses: actions/checkout@v7
+      with:
+        ref: 'main'
+    -name: demo
+      run: echo "hello world"
